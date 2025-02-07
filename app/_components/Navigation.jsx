@@ -8,15 +8,17 @@ import Link from 'next/link';
 function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const handleCloseMenu = () => setIsOpen((isOpen) => !isOpen);
+
   return (
-    <nav className="relative">
+    <nav className="relative bg-yellow-200">
       <div
         className={`${
-          isOpen ? 'h-svh bg-color-primary p-md text-secondary' : ''
-        } fixed right-0 text-center text-[2rem] font-normal leading-[2.8rem] tablet:relative md:h-fit md:bg-transparent md:text-inherit`}
+          isOpen ? 'h-svh bg-color-primary p-md text-secondary top-0' : ''
+        } fixed right-0 left-0 text-center text-[2rem] font-normal leading-[2.8rem] tablet:relative md:h-fit md:bg-transparent md:text-inherit`}
       >
         <button
-          className={`text-h4 menu-toggle left-0 right-20 tablet:hidden ${
+          className={`absolute top-0 right-4  mb-10 text-h4 menu-toggle tablet:hidden ${
             isOpen ? 'text-white' : 'text-color-primary'
           }`}
           onClick={() => setIsOpen(!isOpen)}
@@ -24,35 +26,49 @@ function Navigation() {
           {isOpen ? <IoClose /> : <FaBars />}
         </button>
         <ul
-          className={`flex text-white  flex-col gap-md tablet:flex-row ${
+          className={`flex mt-10 items-center text-white text-p-sm font-medium gap-8 uppercase flex-col gap-md tablet:flex-row ${
             isOpen ? 'block' : 'hidden'
           } tablet:flex`}
         >
           <li>
-            <Link href="/">Home</Link>
+            <Link onClick={handleCloseMenu} href="/">
+              Home
+            </Link>
           </li>
 
           <li>
-            <Link href="/ac-aircondition">AC</Link>
+            <Link onClick={handleCloseMenu} href="/ac-aircondition">
+              AC
+            </Link>
           </li>
           <li>
-            <Link href="/plumbing">Plumbin</Link>
+            <Link onClick={handleCloseMenu} href="/plumbing">
+              Plumbing
+            </Link>
           </li>
           <li>
-            <Link href="/electric">Electric</Link>
+            <Link onClick={handleCloseMenu} href="/electric">
+              Electric
+            </Link>
           </li>
 
           <li>
-            <Link href="/about">About us</Link>
+            <Link onClick={handleCloseMenu} href="/about">
+              About us
+            </Link>
           </li>
           <li>
-            <Link href="/contact">Contact us</Link>
+            <Link onClick={handleCloseMenu} href="/contact">
+              Contact us
+            </Link>
           </li>
-          <li>
-            <Button variation="outline" className={'flex items-center gap-2'}>
-              <FaPhoneAlt />
-              <span> +9755-29899800</span>
-            </Button>
+          <li className="mt-10">
+            <a href="tel:+975529899800">
+              <Button variation="outline" className="flex items-center gap-2">
+                <FaPhoneAlt />
+                <span> +9755-29899800</span>
+              </Button>
+            </a>
           </li>
         </ul>
       </div>
