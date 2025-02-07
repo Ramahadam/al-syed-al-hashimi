@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-inter: 'Inter', ui-sans-serif, system-ui, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+/* Set root font size to 10px */
+html {
+  font-size: 62.5%; /* This makes 1rem = 10px */
+  font-family: var(--font-inter);
+}
+
+/* Reset body font size */
+body {
+  @apply text-p-base;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  padding: 0 !important;
+  margin: 0 !important;
+}
