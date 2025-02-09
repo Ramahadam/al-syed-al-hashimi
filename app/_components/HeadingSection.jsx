@@ -1,21 +1,9 @@
-import PropTypes from "prop-types";
-
-function HeadingSection({ headingText, paragraphText }) {
+function HeadingSection({ children }) {
   return (
-    <div className="mb-10 flex flex-col gap-4">
-      <h2 className="inline-block self-start rounded-sm bg-secondary px-2 text-heading3 md:text-heading2">
-        {headingText}
-      </h2>
-      <p className="text-paragraphSmall md:text-paragraphMedium">
-        {paragraphText}
-      </p>
+    <div className="tracking-tighter">
+      <h2 className=" font-medium text-h3 md:text-h2">{children}</h2>
     </div>
   );
 }
 
 export default HeadingSection;
-
-HeadingSection.prototype = {
-  headingText: PropTypes.string.isRequired,
-  paragrphText: PropTypes.string.isRequired,
-};

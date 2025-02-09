@@ -8,12 +8,11 @@ const config = {
   theme: {
     extend: {
       colors: {
-        'dark-meduim': '#131315',
-        'gray-custom': '#929290',
-        'dark-gray-custom': '#595959',
-        'light-gray-custom': '#9FA7B2',
-        'very-light-gray-custom': '#F5F5F5',
-        'black-custom': '#222222',
+        'color-dark-meduim': '#131315',
+        'color-gray-custom': '#929290',
+        'color-light-gray': '#9FA7B2',
+        'color-very-light-gray': '#F5F5F5',
+        'color-black-custom': '#222222',
         'color-secondary': '#d87297',
         'color-primary': '#002B55',
         'color-accent': '#fbcb50',

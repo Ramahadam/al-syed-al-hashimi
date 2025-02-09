@@ -14,12 +14,13 @@ export default function HeroSlider({ children }) {
   if (!mounted) return null; // Prevents hydration errors
   const settings = {
     dots: true,
+    fade: true,
     infinite: true,
     speed: 1000,
-    // autoplay: true,
-    // autoplaySpeed: 2000,
-    // pauseOnHover: false,
-    // pauseOnFocus: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    pauseOnHover: false,
+    pauseOnFocus: false,
     slidesToShow: 1,
     slidesToScroll: 1,
   };

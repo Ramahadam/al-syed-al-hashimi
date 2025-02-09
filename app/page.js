@@ -1,17 +1,11 @@
-import Button from './_components/Button';
 import HeroSection from './_components/HeroSection';
-import HeroSlider from './_components/HeroSlider';
+import WhyChooseUs from './_components/WhyChooseUs';
 
 export default function Home() {
   return (
-    <div className="">
-      {/* <HeroSlider>
-        <HeroSection />
-        <HeroSection />
-        <HeroSection />
-      </HeroSlider> */}
-
-      <HeroSection />
+    <div className="relative">
+      {/* <HeroSection />
+      <WhyChooseUs /> */}
     </div>
   );
 }

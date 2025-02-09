@@ -15,7 +15,7 @@ html {
 
 /* Reset body font size */
 body {
-  @apply text-p-base;
+  @apply text-p-base text-color-primary;
   /* font-family: Arial, Helvetica, sans-serif; */
   padding: 0 !important;
   margin: 0 !important;

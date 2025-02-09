@@ -1,5 +1,5 @@
-function Spinner() {
+function Loading() {
   return <div className="bg-color-primary">Loading....</div>;
 }
 
-export default Spinner;
+export default Loading;

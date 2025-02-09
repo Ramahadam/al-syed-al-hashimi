@@ -44,9 +44,8 @@ function HeroSection() {
 export default HeroSection;
 
 function Hero({ heroContent }) {
-  console.log(heroContent.imgSrc);
   return (
-    <div className="relative">
+    <div>
       <img
         src={heroContent.imgSrc}
         alt={heroContent.imgAltTxt}
