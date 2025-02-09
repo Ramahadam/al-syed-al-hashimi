@@ -20,7 +20,7 @@ const config = {
         'color-dark-slate': '#25261E',
         'color-blue': '#0072FA',
         'color-primary-linear':
-          'linear-gradient(90deg, #d87297 0%, #e36658 50%, #fbcb50 100%)',
+          'linear-gradient(90deg, #002B55 0%,#0072FA 50%, #fbcb50 100%)',
       },
       borderRadius: {
         50: '50px',
@@ -32,7 +32,8 @@ const config = {
 
       backgroundImage: {
         'color-primary-linear':
-          'linear-gradient(180deg,#FBCB50 0%, #D87297 43%, #E36658 100%)',
+          'linear-gradient(180deg, rgba(0, 43, 85, 0.8) 0%, rgba(0, 114, 250, 0.8) 43%, rgba(255, 255, 255, 0.8) 100%)',
+        // 'linear-gradient(180deg, #002B55  0%,#0072FA 43%, #ffff 100%)',
       },
       fontSize: {
         'display-1': ['4rem', { lineHeight: '1.2' }], // 40px

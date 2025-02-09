@@ -11,14 +11,14 @@ function Navigation() {
   const handleCloseMenu = () => setIsOpen((isOpen) => !isOpen);
 
   return (
-    <nav className="relative bg-yellow-200">
+    <nav className="relative z-50 bg-yellow-200">
       <div
         className={`${
           isOpen ? 'h-svh bg-color-primary p-md text-secondary top-0' : ''
         } fixed right-0 left-0 text-center text-[2rem] font-normal leading-[2.8rem] tablet:relative md:h-fit md:bg-transparent md:text-inherit`}
       >
         <button
-          className={`absolute top-0 right-4  mb-10 text-h4 menu-toggle tablet:hidden ${
+          className={`absolute top-2 right-14  mb-10 text-h4 menu-toggle tablet:hidden ${
             isOpen ? 'text-white' : 'text-color-primary'
           }`}
           onClick={() => setIsOpen(!isOpen)}

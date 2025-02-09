@@ -1,5 +1,5 @@
-import Slider from "./Slider";
-import HeadingSection from "./HeadingSection";
+import Slider from './HeroSlider';
+import HeadingSection from './HeadingSection';
 
 function Testimonials() {
   /**
