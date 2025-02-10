@@ -4,7 +4,7 @@ import Button from './Button';
 import Textarea from './Textarea';
 function ContactUs() {
   return (
-    <div>
+    <div className="w-[90%] mx-auto">
       <HeadingSection
         headingText="Contact Us"
         paragraphText="Connect with Us: Let's Discuss Your Digital Marketing Needs"
@@ -12,16 +12,6 @@ function ContactUs() {
 
       <div className="contact-us relative rounded-lg bg-gray-light p-md text-paragraphSmall">
         <div className="contact-form">
-          <div className="mb-8 flex items-center gap-4">
-            <p className="flex items-center gap-2">
-              <input type="radio" name="sayHiOrquote" id="sayHi" />
-              <label htmlFor="sayHi">Say Hi</label>
-            </p>
-            <p className="flex items-center gap-2">
-              <input type="radio" name="sayHiOrquote" id="sayHi" />
-              <label htmlFor="Get a Quote">Get a Quote</label>
-            </p>
-          </div>
           <form action="#" className="flex flex-col gap-8">
             <Input
               type="text"
@@ -47,7 +37,11 @@ function ContactUs() {
               isRequired={true}
             />
 
-            <Button variation="primary" size="md" className="text-2xl">
+            <Button
+              variation="accent"
+              size="md"
+              className="self-center w-auto !rounded-[1rem]"
+            >
               Send Message
             </Button>
           </form>

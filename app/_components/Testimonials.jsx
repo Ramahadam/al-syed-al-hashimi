@@ -5,21 +5,25 @@ import ResponsiveSlider from './ResponsiveSlider';
 
 const testimonials = [
   {
+    id: 1,
     quoteText: `Their expertise and professionalism exceeded my expectations. The team quickly diagnosed and fixed the issue, ensuring everything was running smoothly.`,
     clientName: 'Peter Mark',
     clientImg: 'profile-01.jpg',
   },
   {
+    id: 2,
     quoteText: `Exceptional service! The team was professional and efficient. Highly recommend their expertise.`,
     clientName: 'Johnson Smith',
     clientImg: 'profile-02.jpg',
   },
   {
+    id: 3,
     quoteText: `They went above and beyond to ensure everything was perfect. Outstanding quality and attention to detail.`,
     clientName: 'Michael Lee',
     clientImg: 'profile-03.jpg',
   },
   {
+    id: 4,
     quoteText: `Reliable, fast, and affordable! I will definitely use their services again in the future.`,
     clientName: 'Mario Peter',
     clientImg: 'profile-04.jpg',

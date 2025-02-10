@@ -1,26 +1,20 @@
 import Button from './Button';
+import HeadingSection from './HeadingSection';
 
 function CallToAction() {
   return (
-    <div className="callToAction flex flex-col bg-gray-light p-md tablet:h-[34.7rem] tablet:flex-row">
-      <div className="mb-16 text-center">
-        <h2 className="mb-5 text-balance text-heading3">
-          Let’s make things happen
-        </h2>
-        <p className="mb-8 text-balance text-paragraphSmall">
-          Contact us today to learn more about how our digital marketing
-          services can help your business grow and succeed online.
+    <div className="bg-color-primary-linear ">
+      <div className="mb-16">
+        <HeadingSection>
+          Keeping Things Running Smoothly—Get in Touch!
+        </HeadingSection>
+        <p className="text-color-primary leading-8 mt-8">
+          Fast, reliable maintenance solutions at your fingertips. Contact us
+          today and let’s get the job done!
         </p>
-        <Button variation="primary" size="large" className="text-2xl">
-          Get your free proposal
-        </Button>
       </div>
-      <div>
-        {/* <img
-          className="flex w-full items-center justify-center"
-          src="./images/proposal-image.png"
-          alt="illustration showing stars, emoji and circles"
-        /> */}
+      <div className="hidden sm:block">
+        <img src="/cta.jpg" alt="cta" className="  brightness-75" />
       </div>
     </div>
   );

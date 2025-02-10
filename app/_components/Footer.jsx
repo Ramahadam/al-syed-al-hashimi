@@ -1,18 +1,13 @@
-import { FaFacebook, FaTwitter } from "react-icons/fa";
-import { ImLinkedin2 } from "react-icons/im";
-import Input from "./Input";
-import Button from "./Button";
+import { FaFacebook, FaTwitter } from 'react-icons/fa';
+import { ImLinkedin2 } from 'react-icons/im';
+import Input from './Input';
+import Button from './Button';
 
 function Footer() {
   return (
-    <footer className="rounded-t-md bg-gray-dark p-4 text-center text-white">
+    <footer className="rounded-t-md bg-color-dark-meduim p-4 text-center text-white">
       <div className="flex flex-col items-center justify-between gap-4 text-paragraphSmall sm:gap-6 md:flex-row md:items-center">
         <div>
-          <img
-            src="./icons/white-logo.svg"
-            alt="Logo"
-            className="mb-12 h-[2.9rem] w-[14rem] tablet:w-[18rem]"
-          />
           <ul className="flex flex-col gap-8 md:flex-row md:gap-4">
             <li>
               <a href="#" className="underline">
@@ -46,7 +41,7 @@ function Footer() {
           <ul className="flex gap-4">
             <li>
               <a href="#" className="hover:underline">
-                <FaFacebook className="h-14 w-14 text-3xl" />
+                <FaFacebook className=" h-14 w-14 text-3xl" />
               </a>
             </li>
             <li>
@@ -54,7 +49,7 @@ function Footer() {
                 href="#"
                 className="flex h-14 w-14 items-center justify-center rounded-full bg-white"
               >
-                <FaTwitter className="fill-gray-dark text-3xl" />
+                <FaTwitter className="fill-color-dark-meduim  text-3xl" />
               </a>
             </li>
             <li>
@@ -62,7 +57,7 @@ function Footer() {
                 href="#"
                 className="flex h-14 w-14 items-center justify-center rounded-full bg-white"
               >
-                <ImLinkedin2 className="fill-gray-dark text-3xl" />
+                <ImLinkedin2 className="fill-color-dark-meduim text-3xl" />
               </a>
             </li>
           </ul>
@@ -74,37 +69,17 @@ function Footer() {
           <h3 className="inline-block self-center rounded-sm bg-secondary text-paragraphBig font-semibold text-gray-dark">
             Contact Us
           </h3>
-          <p>Email: info@positivus.com</p>
+          <p>Email: info@email.com</p>
           <p>Phone: 555-567-8901</p>
           <p className="text-balance">
-            Address: 1234 Main St Moonstone City, Stardust State 12345
+            Address:123 Block C, street 88 , Dubai, UAE
           </p>
-        </div>
-
-        <div className="mt-4 md:mt-0">
-          <form className="flex flex-col gap-2 md:flex-row">
-            <Input
-              type="email"
-              placeholder="Your Email"
-              className="px-sm py-[1rem]"
-            />
-            <Button
-              variation="secondary"
-              onClick=""
-              type=""
-              disabled=""
-              className=""
-              size="small"
-            >
-              Subscribe
-            </Button>
-          </form>
         </div>
       </div>
 
       <div className="mt-6 border-t border-gray-700 pt-4 text-center">
         <p className="text-sm">
-          &copy; 2025.{" "}
+          &copy; 2025.{' '}
           <a href="#" className="hover:underline">
             Privacy Policy
           </a>
