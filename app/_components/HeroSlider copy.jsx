@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 
 const Slider = dynamic(() => import('react-slick'), { ssr: false });
 
-export default function HeroSlider({ children, isResponsive = false }) {
+export default function HeroSlider({ children }) {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -13,12 +13,12 @@ export default function HeroSlider({ children, isResponsive = false }) {
 
   if (!mounted) return null; // Prevents hydration errors
   const settings = {
-    dots: false,
+    dots: true,
     fade: true,
     infinite: true,
     speed: 1000,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2000,
     pauseOnHover: false,
     pauseOnFocus: false,
     slidesToShow: 1,
