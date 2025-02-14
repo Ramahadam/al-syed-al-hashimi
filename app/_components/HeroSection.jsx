@@ -8,7 +8,8 @@ const heroContent = [
     paraText:
       'Expert solutions for your home needs, ensuring comfort and safety.',
     btnText: 'Book Now',
-    imgSrc: '/aclarge.jpg',
+    // imgSrc: '/aclarge.jpg',
+    imgSrc: '/image-group.png',
     imgAltTxt: 'Image for AC',
   },
   {

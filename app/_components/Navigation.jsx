@@ -51,6 +51,11 @@ function Navigation() {
               Electric
             </Link>
           </li>
+          <li>
+            <Link onClick={handleCloseMenu} href="/zones-area">
+              Zones
+            </Link>
+          </li>
 
           <li>
             <Link onClick={handleCloseMenu} href="/about">

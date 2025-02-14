@@ -23,7 +23,7 @@ const services = [
     price: '30 AED',
     title: 'Plumbing Services',
     tags: ['Leaks', 'Pipes', 'Drains'],
-    src: 'man-fixing-small.jpg',
+    src: 'man-heater-fixing-small.jpg',
     alt: 'plumbing-services',
   },
   {
