@@ -9,7 +9,7 @@ const config = {
     extend: {
       colors: {
         'color-dark-meduim': '#131315',
-        'color-gray-custom': '#929290',
+        'color-gray-custom': '#4D4D4D',
         'color-light-gray': '#9FA7B2',
         'color-very-light-gray': '#F5F5F5',
         'color-black-custom': '#222222',
