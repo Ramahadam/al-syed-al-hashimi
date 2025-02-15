@@ -53,7 +53,7 @@ function Accordion({ title, number, content }) {
 
   return (
     <div
-      className={`accordion rounded-md border-b border-color-gray-custom bg-color-accent transition-all delay-75 ease-in tablet:rounded-lg ${
+      className={`accordion rounded-md border-b border-color-gray-custom bg-color-accent bg-opacity-10 transition-all delay-75 ease-in tablet:rounded-lg ${
         !isOpen && '!bg-color-very-light-gray'
       }`}
     >

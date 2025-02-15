@@ -49,11 +49,11 @@ function ServicesSection() {
    * if it causes layout issues or is no longer needed.
    */
   return (
-    <>
+    <div className="py-32 ">
       <PopularServices />
       <ServiceStats />
       <ServiceHighlights />
-    </>
+    </div>
   );
 }
 
@@ -61,31 +61,31 @@ export default ServicesSection;
 
 function ServiceStats() {
   return (
-    <div className="bg-color-very-light-gray">
+    <div className="bg-white mb-12">
       <div className="grid grid-cols-2 gap-y-20 p-[2rem] bg-[url(/service-bg.jpg)] bg-fixed ">
         <StatsCounter
           title="Project completed"
           end={467}
           duration={2}
-          icon={<GrCompliance className=" text-color-accent w-10 h-10" />}
+          icon={<GrCompliance className=" text-color-secondary w-10 h-10" />}
         />
         <StatsCounter
           title="Project design"
           end={202}
           duration={2}
-          icon={<MdOutlineDraw className=" text-color-accent w-12 h-12" />}
+          icon={<MdOutlineDraw className=" text-color-secondary w-12 h-12" />}
         />
         <StatsCounter
           title="happy clients"
           end={400}
           duration={2}
-          icon={<LiaUsersSolid className=" text-color-accent w-12 h-12" />}
+          icon={<LiaUsersSolid className=" text-color-secondary w-12 h-12" />}
         />
         <StatsCounter
           title="project service"
           end={480}
           duration={2}
-          icon={<FaRegChartBar className=" text-color-accent w-12 h-12" />}
+          icon={<FaRegChartBar className=" text-color-secondary w-12 h-12" />}
         />
       </div>
     </div>
@@ -110,11 +110,11 @@ function StatsCounter({ title, end, duration, icon }) {
 
 function PopularServices() {
   return (
-    <div className="services-section p-8">
+    <div className="services-section p-8 mb-16">
       <div className="mb-10 flex flex-col gap-4">
         <HeadingSection className="capitalize text-balance mb-4 text-h4">
           discover most popular
-          <span className="relative  after:absolute after:bg-color-accent after:top-0 after:bottom-0 after:right-0 after:left-0 after:-skew-y-2 after:z-0 px-4 py-1">
+          <span className="relative  after:absolute after:bg-color-secondary after:top-0 after:bottom-0 after:right-0 after:left-0 after:-skew-y-2 after:z-0 px-4 py-1">
             <span className="relative z-50 ">services</span>
           </span>
         </HeadingSection>

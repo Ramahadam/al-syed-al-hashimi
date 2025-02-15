@@ -10,13 +10,10 @@ function Card({ sectionContent }) {
         alt={sectionContent.alt}
         className=" absolute w-full h-full object-cover brightness-50 "
       />
-      <button className=" absolute top-5 left-5">
+      <button className=" absolute top-5 left-5 text-color-secondary-dark">
         <Badage>
           Start from{' '}
-          <span className="text-color-primary ml-2">
-            {sectionContent.price}
-          </span>{' '}
-          /hr
+          <span className="font-semibold ml-2">{sectionContent.price}</span> /hr
         </Badage>
       </button>
       <div className="absolute bottom-0 p-[2.4rem] text-color-very-light-gray">

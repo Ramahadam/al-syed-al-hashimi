@@ -12,16 +12,15 @@ const config = {
         'color-gray-custom': '#4D4D4D',
         'color-light-gray': '#9FA7B2',
         'color-very-light-gray': '#F5F5F5',
-        'color-black-custom': '#222222',
-        'color-secondary': '#d87297',
         'color-primary': '#000000',
-        // 'color-primary': '#002B55',
-        // 'color-accent': '#fbcb50',
-        'color-accent': '#fbcb50',
+
+        'color-secondary': '#FFD700',
+        'color-secondary-dark': '#E6B800',
+        'color-accent': '#FFEE80',
         'color-dark-slate': '#25261E',
-        'color-blue': '#0072FA',
+
         'color-primary-linear':
-          'linear-gradient(90deg, #002B55 0%,#0072FA 50%, #fbcb50 100%)',
+          'linear-gradient(90deg, #9FA7B2 0%,#131315 50%, #E6B800 100%)',
       },
       borderRadius: {
         50: '50px',

@@ -25,7 +25,7 @@ export default function HeroSlider({ children }) {
     slidesToScroll: 1,
   };
   return (
-    <div className="slider-container">
+    <div className="slider-container ">
       <Slider {...settings}>{children}</Slider>
     </div>
   );

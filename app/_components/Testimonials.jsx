@@ -32,8 +32,8 @@ const testimonials = [
 
 function Testimonials() {
   return (
-    <div className="bg-color-dark-meduim text-color-very-light-gray pt-8 px-4 ">
-      <HeadingSection className="mb-[5rem]">
+    <div className="bg-color-dark-meduim text-color-very-light-gray py-14 px-4  mt-32">
+      <HeadingSection className="mb-[5rem] text-color-secondary">
         What client <span className="block">says about us?</span>
       </HeadingSection>
 

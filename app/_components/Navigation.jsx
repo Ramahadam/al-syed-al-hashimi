@@ -18,7 +18,7 @@ function Navigation() {
         } fixed right-0 left-0 text-center text-[2rem] font-normal leading-[2.8rem] tablet:relative md:h-fit md:bg-transparent md:text-inherit`}
       >
         <button
-          className={`absolute top-2 right-14  mb-10 text-h4 menu-toggle tablet:hidden ${
+          className={`absolute top-4 right-14  mb-10 text-h4 menu-toggle tablet:hidden ${
             isOpen ? 'text-white' : 'text-color-primary'
           }`}
           onClick={() => setIsOpen(!isOpen)}
