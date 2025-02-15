@@ -5,6 +5,8 @@ import 'slick-carousel/slick/slick-theme.css';
 import './_styles/globals.css';
 import Header from './_components/Header';
 import Footer from './_components/Footer';
+import WhatsAppButton from './_components/WhatsAppButton';
+import ScrollToTop from './_components/ScrollToTop';
 
 const inter = Inter({
   variable: '--font-inter',
@@ -23,6 +25,8 @@ export default function RootLayout({ children }) {
         <Header />
         <main>{children}</main>
         <Footer />
+        <WhatsAppButton />
+        <ScrollToTop />
       </body>
     </html>
   );

@@ -3,7 +3,7 @@ import Navigation from './Navigation';
 
 function Header() {
   return (
-    <div className="flex mx-4 my-2">
+    <div className="px-4 py-2 fixed top-0 z-50 flex mx-4 my-2 bg-color-very-light-gray right-0 left-0 rounded-15 ">
       <Logo />
       <Navigation />
     </div>

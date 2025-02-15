@@ -4,7 +4,7 @@ import { FaWrench } from 'react-icons/fa';
 const plumbingServicesData = {
   banner: {
     image: 'man-heater-fixing-small.jpg',
-    header: 'Plumbing Installation & Repair Services',
+    header: 'Plumbing Installation &',
   },
   stepsImage: ['plumber-fixing.jpg', 'plumber-fixing.jpg'],
   stepsHeadingText: 'Reliable Plumbing Solutions for Your Home & Business',

@@ -5,7 +5,7 @@ import Button from './Button';
 
 function Footer() {
   return (
-    <footer className="rounded-t-md bg-color-dark-meduim p-4 text-center text-white">
+    <footer className="rounded-t-md bg-color-dark-meduim p-4 text-center mt-16 text-white">
       <div className="flex flex-col items-center justify-between gap-4 text-paragraphSmall sm:gap-6 md:flex-row md:items-center">
         <div>
           <ul className="flex flex-col gap-8 md:flex-row md:gap-4">

@@ -3,7 +3,7 @@ import HeadingSection from './HeadingSection';
 
 function CallToAction() {
   return (
-    <div className="bg-color-primary-linear ">
+    <div className="bg-color-primary-linear p-10">
       <div className="mb-16">
         <HeadingSection>
           Keeping Things Running Smoothly—Get in Touch!

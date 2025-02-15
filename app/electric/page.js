@@ -4,7 +4,7 @@ import { FaBolt } from 'react-icons/fa';
 const electricalServicesData = {
   banner: {
     image: 'technician-small.jpg',
-    header: 'Electrical Installation & Repair Services',
+    header: 'Electrical Installation &',
   },
   stepsImage: ['inspection.jpg', 'wiring-repair.jpg'],
   stepsHeadingText: 'Safe & Reliable Electrical Solutions',

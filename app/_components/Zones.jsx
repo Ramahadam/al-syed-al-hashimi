@@ -117,9 +117,9 @@ export default function Zones() {
 
 function Zone({ zone }) {
   return (
-    <div className="zone-card relative  flex flex-col rounded-15 bg-white w-[90%] shadow-sm ">
+    <div className="zone-card relative  flex flex-col rounded-15 bg-white w-[100%] shadow-sm ">
       <div className="card-header h-64">
-        <div className="relative overflow-hidden rounded-15 bg-opacity-50 bg-color-accent -top-20 left-1/2 -translate-x-1/2  h-80 w-80">
+        <div className="relative overflow-hidden rounded-15 bg-opacity-50 bg-color-accent -top-20 left-1/2 -translate-x-1/2  h-80 w-96">
           <Image
             src={`/${zone.image}`}
             alt="burg al arab tower"

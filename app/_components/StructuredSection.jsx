@@ -14,7 +14,7 @@ function StructuredSection({ pageContent }) {
         <div className="absolute bottom-10 right-[40%] max-w-fit rounded-md  bg-color-very-light-gray bg-opacity-50  px-4 py-6">
           <HeadingSection className="capitalize text-balance mb-4 text-h4  ">
             {banner.header}
-            <span className="relative  after:absolute after:bg-color-accent after:top-0 after:bottom-0 after:right-0 after:left-0 after:-skew-y-2 after:z-0 px-4 py-1">
+            <span className="relative  after:absolute after:bg-color-secondary after:top-0 after:bottom-0 after:right-0 after:left-0 after:-skew-y-2 after:z-0 px-4 py-1">
               <span className="relative z-50 "> Repair</span>
             </span>
           </HeadingSection>
@@ -34,8 +34,8 @@ function StructuredSection({ pageContent }) {
             className=" border-4 border-color-very-light-gray object-cover  h-60 w-60 relative -top-20 -left-20"
           />
         </div>
-        <div>
-          <p className="text-color-accent">How it works</p>
+        <div className="ml-4">
+          <p className="text-color-secondary">How it works</p>
           <h3 className="text-h5 text-balance font-medium tracking-tighter">
             {stepsHeadingText}
           </h3>
@@ -67,8 +67,8 @@ const HowItWorks = ({ pageContent }) => {
           >
             {/* Step Text */}
             <div className="md:w-1/2 flex items-start  gap-x-8">
-              <div className="bg-color-accent  h-28 w-28 flex-shrink-0 flex items-center justify-center">
-                <IconStep className="h-16 w-16" />
+              <div className="bg-color-very-light-gray  h-28 w-28 flex-shrink-0 flex items-center justify-center">
+                <IconStep className="h-16 w-16 text-color-secondary-dark" />
               </div>
               <div className="-mt-2">
                 <h4 className=" font-medium mb-2 tracking-tighter ">
@@ -85,7 +85,7 @@ const HowItWorks = ({ pageContent }) => {
       <div className="relative container italic mx-auto bg-color-very-light-gray p-10">
         <p className="opacity-85">&quot; {quote.text} &quot;</p>
         <p className="text-p-xs mt-4">{quote.author}</p>
-        <span className="absolute h-24 w-2 bg-color-accent top-1/2 left-0 -translate-y-1/2"></span>
+        <span className="absolute h-24 w-2 bg-color-secondary top-1/2 left-0 -translate-y-1/2"></span>
       </div>
     </section>
   );

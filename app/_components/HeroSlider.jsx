@@ -17,7 +17,7 @@ export default function HeroSlider({ children, isResponsive = false }) {
     fade: true,
     infinite: true,
     speed: 1000,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3000,
     pauseOnHover: false,
     pauseOnFocus: false,

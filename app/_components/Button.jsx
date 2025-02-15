@@ -11,6 +11,7 @@ function Button({
   const variationClass = {
     outline: 'border border-gray-dark text-gray-dark',
     primary: 'bg-color-primary text-white',
+    secondary: 'bg-color-secondary text-primary',
     accent: 'bg-color-accent text-gray-dark',
     link: 'bg-transparent text-secondary',
   };
