@@ -1,6 +1,6 @@
-"use client"
-import { useState } from "react";
-import { FaMinusCircle, FaPlusCircle } from "react-icons/fa";
+'use client';
+import { useState } from 'react';
+import { FaMinusCircle, FaPlusCircle } from 'react-icons/fa';
 
 /***
  * 
@@ -53,28 +53,30 @@ function Accordion({ title, number, content }) {
 
   return (
     <div
-      className={`accordion rounded-md border-b border-gray-200 bg-secondary transition-all delay-75 ease-in tablet:rounded-lg ${
-        !isOpen && "!bg-gray-light"
+      className={`accordion rounded-md border-b border-color-gray-custom bg-color-accent transition-all delay-75 ease-in tablet:rounded-lg ${
+        !isOpen && '!bg-color-very-light-gray'
       }`}
     >
       <button
-        className={`accordion-header relative flex w-full items-center justify-between p-4 text-left before:absolute before:bottom-0 before:h-[1px] before:w-[90%] before:bg-gray-dark focus:outline-none ${!isOpen && "before:!h-0"}`}
+        className={`accordion-header relative flex w-full items-center justify-between p-4 text-left before:absolute before:bottom-0 before:h-[1px] before:w-[90%] before:bg-color-dark-meduim focus:outline-none ${
+          !isOpen && 'before:!h-0'
+        }`}
         onClick={toggleAccordion}
       >
-        <p className="flex items-center gap-4">
-          <span className="text-heading4 font-semibold">{number}</span>
-          <span className="text-2xl font-medium">{title}</span>
+        <p className="flex items-start gap-4">
+          <span className="text-p-md font-semibold">{number}</span>
+          <span className="text-p-base font-medium text-pretty">{title}</span>
         </p>
-        <span>
+        <span className="text-color-dark-meduim">
           {isOpen ? (
-            <FaMinusCircle className="h-8 w-8 rounded-full bg-gray-dark text-gray-light" />
+            <FaMinusCircle className="h-8 w-8 rounded-full bg-color-very-light-gray " />
           ) : (
-            <FaPlusCircle className="h-8 w-8 rounded-full bg-gray-dark text-gray-light" />
+            <FaPlusCircle className="h-8 w-8 rounded-full bg-gray-dark " />
           )}
         </span>
       </button>
       {isOpen && (
-        <div className="accordion-content p-4 text-paragraphSmall">
+        <div className="accordion-content p-4 text-pretty">
           <p>{content}</p>
         </div>
       )}
