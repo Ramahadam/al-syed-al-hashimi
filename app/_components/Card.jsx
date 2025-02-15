@@ -3,7 +3,7 @@ import Badage from './Badage';
 function Card({ sectionContent }) {
   return (
     <div
-      className={`relative w-[35rem] h-[40rem] bg-color-light-gray rounded-15 overflow-hidden`}
+      className={`relative  w-[30rem] h-[40rem] bg-color-light-gray rounded-15 overflow-hidden`}
     >
       <img
         src={`/${sectionContent.src}`}

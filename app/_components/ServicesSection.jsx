@@ -62,7 +62,8 @@ export default ServicesSection;
 function ServiceStats() {
   return (
     <div className="bg-white mb-12">
-      <div className="grid grid-cols-2 gap-y-20 p-[2rem] bg-[url(/service-bg.jpg)] bg-fixed ">
+      {/* <div className="grid grid-cols-2 gap-y-20 p-[2rem] bg-[url(/service-bg.jpg)] bg-fixed "> */}
+      <div className=" grid grid-cols-2 md:grid-cols-4  gap-y-20 p-[2rem] bg-[url(/service-bg.jpg)] bg-fixed ">
         <StatsCounter
           title="Project completed"
           end={467}
@@ -94,7 +95,7 @@ function ServiceStats() {
 
 function StatsCounter({ title, end, duration, icon }) {
   return (
-    <div className="group flex flex-col items-center gap-4">
+    <div className="group flex flex-col items-center gap-4 ">
       <span className="bg-color-light-gray p-2 rounded-sm">{icon}</span>
       <p>{title}</p>
       <span>
@@ -124,7 +125,8 @@ function PopularServices() {
         </p>
       </div>
 
-      <div className=" grid gap-12 mt-14">
+      {/* <div className=" grid md:grid-cols-3 gap-12 mt-14"> */}
+      <div className=" flex flex-wrap gap-12 mt-14">
         {services.map((service) => (
           <Card sectionContent={service} key={service.title} />
         ))}
@@ -135,7 +137,7 @@ function PopularServices() {
 
 function ServiceHighlights() {
   return (
-    <div className="grid gap-y-12">
+    <div className="grid gap-y-12 md:grid-cols-3">
       <div className="shadow-sm bg-color-very-light-gray text-center w-[30rem] h-[30rem] mx-auto relative">
         <div className="header relative bg-yellow-200">
           <img

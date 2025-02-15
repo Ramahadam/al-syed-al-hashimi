@@ -37,7 +37,7 @@ const config = {
       fontSize: {
         'display-1': ['4rem', { lineHeight: '1.2' }], // 40px
         'display-2': ['3.5rem', { lineHeight: '1.2' }], // 35px
-        h1: ['3.6rem', { lineHeight: '1.2' }], // 36px
+        h1: ['4rem', { lineHeight: '1.2' }], // 36px
         h2: ['3.5rem', { lineHeight: '1.2' }], // 35px
         h3: ['3.3rem', { lineHeight: '1.2' }], // 33px
         h4: ['3rem', { lineHeight: '1.2' }], // 32px

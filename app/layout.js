@@ -21,12 +21,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} antialiased  scroll-smooth `}>
-        <Header />
-        <main>{children}</main>
-        <Footer />
-        <WhatsAppButton />
-        <ScrollToTop />
+      <body
+        className={`${inter.variable} antialiased  scroll-smooth md:flex md:justify-center `}
+      >
+        <div className="md:w-full md:max-w-[1440px]">
+          <Header />
+          <main>{children}</main>
+          <Footer />
+          <WhatsAppButton />
+          <ScrollToTop />
+        </div>
       </body>
     </html>
   );

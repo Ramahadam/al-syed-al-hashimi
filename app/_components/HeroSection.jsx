@@ -34,7 +34,7 @@ const heroContent = [
 
 function HeroSection() {
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden ">
       <HeroSlider>
         <Hero heroContent={heroContent[0]} />
         <Hero heroContent={heroContent[1]} />
@@ -48,7 +48,7 @@ export default HeroSection;
 
 function Hero({ heroContent }) {
   return (
-    <div>
+    <div className="md:relative md:h-[80vh] md:max-h-[900px]">
       <img
         src={heroContent.imgSrc}
         alt={heroContent.imgAltTxt}
@@ -59,7 +59,7 @@ function Hero({ heroContent }) {
 
       {/* Hero Content */}
       <div className="relative flex min-h-[75vh] sm:min-h-[85vh] md:h-[100svh] flex-col items-center justify-center text-center px-4 py-6">
-        <h1 className="text-color-very-light-gray text-h3  font-semibold leading-tight max-w-2xl mb-4">
+        <h1 className="text-color-very-light-gray text-h3 md:text-h1  font-semibold leading-tight md:max-w-4xl max-w-2xl mb-4">
           {heroContent.headingText}
         </h1>
         <p className="text-color-very-light-gray text-p-sm max-w-xl mb-6">
@@ -68,7 +68,7 @@ function Hero({ heroContent }) {
         <Button
           variation="secondary"
           size="sm"
-          className="!text-color-primary bg-color-secondary rounded-[1rem] font-medium"
+          className="!text-color-primary bg-color-secondary md:text-p-sm  uppercase rounded-[1rem] font-medium"
         >
           {heroContent.btnText}
         </Button>

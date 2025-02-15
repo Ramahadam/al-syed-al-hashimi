@@ -83,8 +83,8 @@ const zones = [
 export default function Zones() {
   return (
     <>
-      <div className="relative max-h-[30vh] ">
-        <div className="relative w-full h-64">
+      <div className="relative max-h-[30vh] md:h-[50vh] md:max-h-full">
+        <div className="relative w-full h-64 md:h-full">
           <Image
             src={`/zones-area.png`}
             alt="hero image"
@@ -105,7 +105,8 @@ export default function Zones() {
 
       <div className=" p-10 bg-color-very-light-gray">
         {/* <h3 className="text-h5">Service Areas and zones</h3> */}
-        <div className="mt-40 grid grid-cols-1 gap-y-36">
+        {/* <div className="mt-40 grid grid-cols-1 gap-y-36"> */}
+        <div className="mt-40 flex flex-col md:flex-row md:flex-wrap gap-y-36">
           {zones.map((zone) => (
             <Zone key={zone.id} zone={zone} />
           ))}
@@ -117,7 +118,7 @@ export default function Zones() {
 
 function Zone({ zone }) {
   return (
-    <div className="zone-card relative  flex flex-col rounded-15 bg-white w-[100%] shadow-sm ">
+    <div className="zone-card relative flex flex-col rounded-15 bg-white w-[100%] shadow-sm md:w-[35rem]  md:mx-auto">
       <div className="card-header h-64">
         <div className="relative overflow-hidden rounded-15 bg-opacity-50 bg-color-accent -top-20 left-1/2 -translate-x-1/2  h-80 w-96">
           <Image

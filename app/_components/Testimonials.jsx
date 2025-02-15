@@ -37,7 +37,7 @@ function Testimonials() {
         What client <span className="block">says about us?</span>
       </HeadingSection>
 
-      <div className=" max-w-[85%] mx-auto">
+      <div className=" max-w-[85%] md:w-[75%] mx-auto">
         <ResponsiveSlider isResponsive={true}>
           {testimonials.map((testimonial) => (
             <Testimonial testimonial={testimonial} key={testimonial.id} />

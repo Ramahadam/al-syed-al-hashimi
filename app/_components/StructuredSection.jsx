@@ -6,7 +6,7 @@ function StructuredSection({ pageContent }) {
 
   return (
     <>
-      <div className="relative min-h-[50vh]">
+      <div className="relative min-h-[50vh] md:h-[20rem]">
         <img src={`/${banner.image}`} alt="hero image" className="max-h-full" />
 
         <div className="absolute inset-0 bg-color-primary bg-opacity-70"></div>
@@ -26,12 +26,12 @@ function StructuredSection({ pageContent }) {
           <img
             src={`/${stepsImage[0]}`}
             alt="engineer repairing"
-            className="h-72 w-72 object-cover border-4 border-color-very-light-gray relative"
+            className="h-72 w-72 md:w-80 md:h-80   object-cover border-4 border-color-very-light-gray relative"
           />
           <img
             src={`/${stepsImage[1]}`}
             alt="engineer repairing"
-            className=" border-4 border-color-very-light-gray object-cover  h-60 w-60 relative -top-20 -left-20"
+            className=" border-4 border-color-very-light-gray object-cover  h-60 w-60 md:w-70 md:h-70 relative -top-20 -left-20"
           />
         </div>
         <div className="ml-4">

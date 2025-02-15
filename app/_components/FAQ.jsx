@@ -46,7 +46,7 @@ const faqData = [
 ];
 function FAQ() {
   return (
-    <div className="max-w-[90%] mx-auto  flex flex-col gap-4 px-sm mt-32">
+    <div className="max-w-[90%] md:max-w-[90rem] mx-auto  flex flex-col gap-4 px-sm mt-32">
       <div>For big screen you should eitght show omething here</div>
       <h3 className="text-h5 bg-color-accent w-fit p-2 -skew-x-12 ">
         Frequently Asked Questions

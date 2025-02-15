@@ -5,10 +5,10 @@ import FAQ from '../_components/FAQ';
 export default function Page() {
   return (
     <div className="tracking-tighter  text-color-gray-custom">
-      <div className="relative bg-color-very-light-gray px-4 pt-24 ">
+      <div className="relative bg-color-very-light-gray px-4 pt-24 md:grid md:grid-cols-2 md:items-center">
         <div className="contact-left">
           <div className=" leading-10 text-pretty text-[1.5rem]">
-            <h2 className="text-h4 font-semibold tracking-tighter mb-4">
+            <h2 className="text-h4 font-semibold tracking-tighter mb-4 mt-10">
               Contact Us
             </h2>
             <p>
@@ -22,14 +22,14 @@ export default function Page() {
           </div>
         </div>
 
-        <div className="contact-right bg-white py-4  mt-14 rounded-15">
+        <div className="contact-right bg-white py-4  mt-14 rounded-15 md:w-[45rem]">
           <h4 className="text-h5 font-semibold ml-4 my-4">Get in Touch</h4>
           <ContactUs />
         </div>
       </div>
 
-      <Map />
       <FAQ />
+      <Map />
     </div>
   );
 }

@@ -3,7 +3,7 @@ import HeadingSection from './HeadingSection';
 
 function CallToAction() {
   return (
-    <div className="bg-color-primary-linear p-10">
+    <div className="bg-color-primary-linear p-10 md:grid md:grid-cols-2 md:justify-center md:items-center ">
       <div className="mb-16">
         <HeadingSection>
           Keeping Things Running Smoothly—Get in Touch!
@@ -13,8 +13,8 @@ function CallToAction() {
           today and let’s get the job done!
         </p>
       </div>
-      <div className="hidden sm:block">
-        <img src="/cta.jpg" alt="cta" className="  brightness-75" />
+      <div className="hidden md:block ">
+        <img src="/engineer-transparent.png" alt="cta" className="h-[40rem]" />
       </div>
     </div>
   );
